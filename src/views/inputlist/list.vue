@@ -2,7 +2,7 @@
 <template>
   <div id="app">
     <div style="width: 200px">
-      <inputlist clear search v-model="xxx"> </inputlist>
+      <inputlist clear v-model="xxx"> </inputlist>
       <input type="text" />
     </div>
   </div>

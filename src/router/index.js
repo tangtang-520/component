@@ -1,28 +1,41 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import List from "../views/list.vue";
+import home from "../views/index.vue";
 
 Vue.use(VueRouter);
 
 const routes = [
   {
     path: "/",
-    name: "List",
-    redirect: "/list",
-    component: List,
+    name: "home",
+    redirect: "/home",
+  },
+  {
+    path: "/home",
+    name: "Home",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/index.vue"),
   },
 
   {
     path: "/inputlist",
     name: "InputList",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/inputlist.vue"),
+      import(
+        /* webpackChunkName: "about" */ "../views/inputlist/inputlist.vue"
+      ),
   },
   {
     path: "/list",
     name: "List",
     component: () =>
-      import(/* webpackChunkName: "about" */ "../views/list.vue"),
+      import(/* webpackChunkName: "about" */ "../views/inputlist/list.vue"),
+  },
+  {
+    path: "/time",
+    name: "Time",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/time/index.vue"),
   },
 ];
 

@@ -1,10 +1,9 @@
 <template>
   <div id="app">
     <div id="nav">
-      <!-- <router-link to="/">list</router-link> |
-      <router-link to="/time">倒计时</router-link> -->
+      <router-link to="/list">list</router-link> |
+      <router-link to="/time">倒计时</router-link>
     </div>
-    <router-view />
   </div>
 </template>
 
