@@ -400,35 +400,16 @@ export default {
     getValue(value) {
       this.valueId = value;
       console.log(value);
-      // console.log(this.valueId);
-      //   this.data.groupID = this.valueId;
     },
     // 保存数据
     updateData(nodeData) {
       console.log(nodeData);
       // 调接口
-      //   Table.modGroup({ id: nodeData.data.id, name: nodeData.name }).then(
-      //     (res) => {
-      //       let index = this.storeMenus.findIndex(
-      //         (item) => item.id === nodeData.data.id
-      //       );
-      //       this.$set(this.storeMenus[index], "name", nodeData.name);
-      //       this.$notify({ type: "success", message: "组名修改成功" });
-      //     }
-      //   );
     },
     // 删除组
     deleteTreeData(nodeData) {
       console.log(nodeData.id);
       // 调接口
-      //   Table.delGroup({ id: nodeData.id }).then((res) => {
-      //     let index = this.storeMenus.findIndex(
-      //       (item) => item.id === nodeData.id
-      //     );
-      //     this.storeMenus.splice(index, 1);
-      //     this.$notify({ type: "success", message: "组删除成功" });
-      //     this.valueId = null;
-      //   });
     },
   },
 };
