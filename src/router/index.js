@@ -37,6 +37,12 @@ const routes = [
     component: () =>
       import(/* webpackChunkName: "about" */ "../views/time/index.vue"),
   },
+  {
+    path: "/treeSelect",
+    name: "TreeSelect",
+    component: () =>
+      import(/* webpackChunkName: "about" */ "../views/treeSelect/index.vue"),
+  },
 ];
 
 const router = new VueRouter({
